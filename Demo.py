@@ -16,5 +16,9 @@ time.sleep(3)
 driver.find_element("name", "btnK").send_keys(Keys.ENTER)
 time.sleep(3)
 
+x= driver.find_element("name", "a").text
+print(x)
+
+assert x == "Hello world!!"
 driver.close()
 print("#### Done ####")
